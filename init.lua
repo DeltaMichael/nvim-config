@@ -51,6 +51,7 @@ vim.keymap.set('n', 'S', ':%s//g<Left><Left>')
 vim.keymap.set('', '<leader>c', ':enew | r !')
 -- Toggle NERDTree with leader-n
 vim.keymap.set('', '<leader>n', ':NERDTreeToggle<CR>')
+vim.keymap.set('', '<leader>fn', ':NERDTreeFind<CR>')
 -- Disable comment on newline
 vim.cmd('autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o')
 
