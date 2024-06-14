@@ -35,6 +35,10 @@ vim.keymap.set('n', '<C-K>', ':bprev<CR>')
 vim.keymap.set('n', '<C-D>', ':bd!<CR>')
 -- Replace ex mode with gq
 vim.keymap.set('n', 'Q', 'gq')
+-- Edit the main config file
+vim.keymap.set('n', '<leader>ec', ':edit /Users/mdilyan/.config/nvim/init.lua<CR>')
+vim.keymap.set('n', '<leader>ecd', ':edit /Users/mdilyan/.config/nvim/<CR>')
+vim.keymap.set('n', '<leader>lc', ':luafile %<CR>')
 
 -- terminal mode to normal mode
 vim.keymap.set('t','<leader><Esc>', ':<C-\\><C-n>')
