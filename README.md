@@ -9,7 +9,7 @@ cmp-vsnip
 cmp_luasnip
 lazydev.nvim
 lualine.nvim
-nerdtree
+nvim-tree.lua
 nvim
 nvim-cmp
 nvim-lspconfig

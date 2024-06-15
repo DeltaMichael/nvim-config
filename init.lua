@@ -50,8 +50,8 @@ vim.keymap.set('n', 'S', ':%s//g<Left><Left>')
 -- Run command in terminal and output in new buffer
 vim.keymap.set('', '<leader>c', ':enew | r !')
 -- Toggle NERDTree with leader-n
-vim.keymap.set('', '<leader>n', ':NERDTreeToggle<CR>')
-vim.keymap.set('', '<leader>fn', ':NERDTreeFind<CR>')
+vim.keymap.set('', '<leader>n', ':NvimTreeToggle<CR>')
+vim.keymap.set('', '<leader>fn', ':NvimTreeFindFile<CR>')
 -- Disable comment on newline
 vim.cmd('autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o')
 
@@ -67,3 +67,24 @@ vim.cmd('autocmd BufWritePre * cal cursor(currPos[1], currPos[2])')
 
 require('plugins')
 vim.cmd('colorscheme solarized8')
+
+-- disable netrw at the very start of your init.lua
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
+
+
+-- OR setup with some options
+-- require("nvim-tree").setup({
+--   sort = {
+--     sorter = "case_sensitive",
+--   },
+--   view = {
+--     width = 30,
+--   },
+--   renderer = {
+--     group_empty = true,
+--   },
+--   filters = {
+--     dotfiles = true,
+--   },
+-- })
