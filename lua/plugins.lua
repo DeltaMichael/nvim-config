@@ -1,3 +1,6 @@
+require("dracula").setup({
+	transparent_bg=false
+})
 require("lsp-configuration")
 require("lualine-configuration")
 require("bufferline").setup {}

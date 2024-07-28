@@ -4,7 +4,7 @@ vim.g.loaded_netrwPlugin = 1
 
 -- Basics
 vim.opt.title = true
-vim.opt.bg = 'light'
+-- vim.opt.bg = 'dark'
 -- vim.opt.go = 'a'
 vim.opt.mouse = 'a'
 vim.opt.hlsearch = false
@@ -69,5 +69,9 @@ vim.cmd('autocmd BufWritePre * %s/\\n\\+\\%$//e')
 vim.cmd('autocmd BufWritePre *.[ch] %s/\\%$/\r/e') -- add trailing newline for ANSI C standard
 vim.cmd('autocmd BufWritePre * cal cursor(currPos[1], currPos[2])')
 
+vim.cmd('highlight Normal guibg=none')
+vim.cmd('highlight NonText guibg=none')
+vim.cmd('highlight Normal ctermbg=none')
+vim.cmd('highlight NonText ctermbg=none')
 require('plugins')
-vim.cmd('colorscheme solarized8')
+vim.cmd('colorscheme dracula')
