@@ -41,7 +41,7 @@ cmp.setup({
       { name = 'buffer' },
     })
  })
- require("cmp_git").setup() ]]-- 
+ require("cmp_git").setup() ]]--
 
 -- Use buffer source for `/` and `?` (if you enabled `native_menu`, this won't work anymore).
 cmp.setup.cmdline({ '/', '?' }, {
@@ -98,3 +98,4 @@ require'lspconfig'.lua_ls.setup {
 }
 
 require'lspconfig'.gopls.setup{}
+require'lspconfig'.ccls.setup{}
