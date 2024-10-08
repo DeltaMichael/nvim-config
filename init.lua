@@ -53,7 +53,7 @@ vim.keymap.set('n','<leader>tb', ':enew | term<CR>')
 vim.keymap.set('n', 'S', ':%s//g<Left><Left>')
 -- Run command in terminal and output in new buffer
 vim.keymap.set('', '<leader>c', ':enew | r !')
--- Toggle NERDTree with leader-n
+-- Toggle NvimTree with leader-n
 vim.keymap.set('', '<leader>n', ':NvimTreeToggle<CR>')
 vim.keymap.set('', '<leader>fn', ':NvimTreeFindFile<CR>')
 -- Disable comment on newline

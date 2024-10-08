@@ -99,3 +99,12 @@ local capabilities = require('cmp_nvim_lsp').default_capabilities()
 --
 -- require'lspconfig'.gopls.setup{}
 require'lspconfig'.ccls.setup{}
+require'lspconfig'.rust_analyzer.setup{
+  settings = {
+    ['rust-analyzer'] = {
+      diagnostics = {
+        enable = false;
+      }
+    }
+  }
+}
